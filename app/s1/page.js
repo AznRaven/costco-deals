@@ -15,7 +15,7 @@ const page = () => {
       description: "",
     },
     {
-      store: "Costco.com",
+      store: "In-Store Only",
       name: "Snack Factory Dark Chocolate Crunch Pretzel Crisps, 22 oz",
       price: "$3 OFF",
       image:
@@ -35,7 +35,7 @@ const page = () => {
       description: "",
     },
     {
-      store: "Costco.com",
+      store: "In-Store Only",
       name: "Crown Maple Organic Bourbon Barrel Aged Maple Syrup, 25 oz",
       price: "$4.30 OFF",
       image:
@@ -194,38 +194,143 @@ const page = () => {
       limit: "2",
       description: "",
     },
+    {
+      store: "Costco.com",
+      name: "Chex Cereal Party Mix Variety Pack, Corn, Rice and Wheat Chex, 3 ct, 54.25 oz",
+      price: "$2.70 OFF",
+      image:
+        "https://i5.walmartimages.com/seo/Corn-Rice-and-Wheat-Chex-Breakfast-Cereal-Variety-Pack-54-25-oz_98e8a78c-c590-4dfa-8980-5ea5d12c7a16.b46503cc5b38f06f4be447857f181a35.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      item: "28245",
+      limit: "10",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Kleenex Trusted Care Facial Tissue, 2-ply, 230-count, 10-pack",
+      price: "$5 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/3x3qw367g3ncw7wrzpf35rq/100089150-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "723675",
+      limit: "6",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Carr's Table Water Crackers, Variety Pack, 25.5 oz",
+      price: "$4.50 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/fkf74s88h5t6pqfkgktc32q/100387865-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "795269",
+      limit: "6",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Kirkland Signature Parchment Paper, 15 in x 164 ft, 2-count",
+      price: "$3 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/n8bxjcmkgxxxn4mxmcxhqr7c/1323118-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "1323118",
+      limit: "5",
+      description: "",
+    },
+    {
+      store: "In-Store Only",
+      name: "Kirkland Signature Parchment Paper, 15 in x 164 ft, 2-count",
+      price: "$4.50 OFF*",
+      image:
+        "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMUpZx9Hx2CYE3zrwgqxbP0Zq0QG3VN2IytrOFvk-9N4LmCXjpo1J6z08Lg0HR38MFjZlQaM1n7Uo_7k4aHbOUur-VKiO2",
+      item: "1108214",
+      limit: "NO LIMIT",
+      description: "",
+    },
+    {
+      store: "In-Store Only",
+      name: "Kirkland Signature Elegant Plastic Plates",
+      price: "$3 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/4b9vbrphpnq8g9x5g64fkv/1343253-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "1343253",
+      limit: "2",
+      description: "",
+    },
+    {
+      store: "Business Center",
+      name: "Philadelphia Original Cream Cheese Spread 3 lbs",
+      price: "$3 OFF*",
+      image:
+        "https://cdnimg.webstaurantstore.com/images/products/large/676306/2679507.jpg",
+      item: "40532",
+      limit: "NO LIMIT",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Chinet Crystal 10 oz Plastic Cup, Clear, 150-count",
+      price: "$3 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/95txgfktvqm779qkx55zcp7r/519964-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "519964",
+      limit: "2",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Nylabone Broth Bones Natural Edible Dog Chews, 60-count, 2-pack",
+      price: "$7 OFF*",
+      image:
+        "https://bfasset.costco-static.com/U447IH35/as/kswhf6n6tjhc2kfwhmpffcx/4000300123-847__1?auto=webp&amp;format=jpg&width=1200&height=1200&fit=bounds&canvas=1200,1200",
+      item: "1850603",
+      limit: "5",
+      description: "",
+    },
+    {
+      store: "Costco.com",
+      name: "Cuisine Adventures French Onion Soup, 6-count",
+      price: "$7 OFF*",
+      image:
+        "https://cuisineadventuresfoods.com/wp-content/uploads/2024/05/French-Onion-Soup-6-US.png",
+      item: "169730",
+      limit: "NO LIMIT",
+      description: "",
+    },
   ];
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 items-center gap-1">
-        {items.map((item) => (
-          <div className="p-4 place-items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="p-4 place-items-center bg-white rounded shadow-lg w-72 h-[30rem] flex flex-col justify-between"
+          >
             <div
-              className={`text-center w-fit py-1 px-2 text-white ${
+              className={`text-center w-full py-1 px-2 text-white ${
                 item.store === "Costco.com"
                   ? "bg-red-600"
                   : item.store === "Business Center"
                   ? "bg-blue-600"
                   : item.store === "Costco.com Only"
                   ? "bg-green-600"
+                  : item.store === "In-Store Only"
+                  ? "bg-gray-600"
                   : ""
               }`}
             >
               {item.store}
             </div>
             <div className="text-center font-bold">{item.name}</div>
-            <div className="text-center font-bold text-2xl">{item.price}</div>
-            <div className="flex">
+            <div className="text-center font-bold text-xl">{item.price}</div>
+            <div className="flex justify-center space-x-2">
               <img
-                className="w-1/2 mx-auto"
+                className="w-3/4 h-auto object-cover"
                 src={item.image}
-                alt="placeholder"
+                alt={item.name}
               />
               {item.image2 && (
                 <img
-                  className="w-1/2 mx-auto"
+                  className="w-3/4 h-auto object-cover"
                   src={item.image2}
-                  alt="placeholder"
+                  alt={item.name}
                 />
               )}
             </div>
