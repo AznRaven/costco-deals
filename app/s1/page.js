@@ -97,7 +97,6 @@ const page = () => {
   ];
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="font-bold text-2xl">* Online prices may be higher</div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 items-center gap-1">
         {items.map((item) => (
           <div className="p-4 place-items-center">

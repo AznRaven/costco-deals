@@ -18,6 +18,8 @@ const Nav = () => {
           </Link>
         ))}
       </nav>
+      <div className="font-bold text-2xl text-center">* Online prices may be higher</div>
+
     </div>
   );
 };
